@@ -43,13 +43,13 @@ p {
 
 // theElement.addEventListener("mouseup", tapOrClick, false);
 		
-		theElement.addEventListener("touchstart", tap, false);
+		theElement.addEventListener("click", tap, false);
 theElement.addEventListener("touchend", tapOrClick, false);
 		
 		function tap(event){
 	
 			this.style.border='3px solid yellow';
-			event.preventDefault();
+			tapOrClick=null;
 
 }
 
