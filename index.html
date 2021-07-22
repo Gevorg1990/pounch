@@ -47,8 +47,9 @@ p {
 theElement.addEventListener("touchend", tapOrClick, false);
 		
 		function tap(event){
-	tapOrClick=null;
+	
 			this.style.border='3px solid yellow';
+			event.preventDefault();
 
 }
 
