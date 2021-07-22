@@ -42,10 +42,17 @@ p {
 		var theElement = document.querySelector(".pounch");
 
 // theElement.addEventListener("mouseup", tapOrClick, false);
+		
+		theElement.addEventListener("touchstart", tap, false);
 theElement.addEventListener("touchend", tapOrClick, false);
+		
+		function top(event){
+	tapOrClick=null;
+	alert('touch strat')
+}
 
 function tapOrClick(event) {
-   alert()
+   alert('touch end')
 
     event.preventDefault();
     return false;
